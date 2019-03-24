@@ -18,6 +18,16 @@ body {
     font-size: 40px;
     letter-spacing: 0.4em;
     font-family: 'Overpass', sans-serif;
+    transform: translate(0, 80px);
+    transition: all 1000ms;
+    opacity: 0;
+}
+
+.top.fadein,
+.center.fadein,
+.bottom.fadein {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .top h1 {
@@ -40,6 +50,9 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    transform: translate(0, 80px);
+    transition: all 1000ms;
+    opacity: 0;
 }
 
 .center img {
@@ -92,7 +105,9 @@ body {
     height: 730px;
     justify-content: center;
     align-items: center;
-
+    transform: translate(0, 80px);
+    transition: all 1000ms;
+    opacity: 0;
 }
 
 .bottom a:hover {
@@ -102,10 +117,18 @@ body {
 }
 
 .bottom img {
-    width: 140px;
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom a:last-child img {
+    width: 110px;
 }
 
 .bottom a {
+    width: 150px;
+    margin: 0 50px;
     transition: all .1s;
     padding: 30px;
     border-radius: 20px;

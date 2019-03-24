@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 body {
     color: #fff;
     width: 100%;
@@ -12,6 +13,7 @@ body {
 }
 
 .top {
+    font-family: 'Overpass', sans-serif;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -19,6 +21,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    transform: translate(0, 80px);
+    transition: all 1000ms;
+    opacity: 0;
+}
+
+.top.fadein,
+.profile.fadein,
+.works.fadein {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .top img {
@@ -51,6 +63,9 @@ h1 {
     justify-content: center;
     align-items: center;
     font-family: 'Overpass', sans-serif;
+    transform: translate(0, 30px);
+    transition: all 1000ms;
+    opacity: 0;
 }
 
 .profile > p {
@@ -124,6 +139,9 @@ h1 {
     justify-content: center;
     align-items: center;
     font-family: 'Overpass', sans-serif;
+    transform: translate(0, 30px);
+    transition: all 1000ms;
+    opacity: 0;
 }
 
 .workscontainer {
