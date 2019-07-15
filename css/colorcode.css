@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: #FA8C9E;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.top {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    letter-spacing: 0.4em;
+    font-family: 'Overpass', sans-serif;
+    transform: translate(0, 80px);
+    transition: all 1000ms;
+    opacity: 0;
+}
+
+.top.fadein,
+.center.fadein,
+.bottom.fadein {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.top h1 {
+    margin: 0px;
+    top: 40%;
+    position: absolute;
+    color: #fff;
+    text-shadow: 0 2px 3px #B9B9B9;
+
+}
+
+.top img {
+    display: block;
+    width: 280px;
+}
+
+.center {
+    width: 100%;
+    display: inline-flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 80px);
+    transition: all 1000ms;
+    opacity: 0;
+}
+
+.center img {
+    display: block;
+    width: 360px;
+}
+
+/*
+#discriptionRight {
+    font-size: 22px;
+    color: #fff;
+    margin: 0 30px;
+    float: left;
+    line-height: 40px;
+    font-style: normal;
+    width: 200px;
+}
+*/
+
+.discriptionLeft {
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 30px;
+    font-style: normal;
+    width: 400px;
+}
+
+.apptitle {
+    font-size: 40px;
+    letter-spacing: 0.2em;
+
+}
+
+.appType {
+    letter-spacing: 0.2em;
+}
+
+.discription {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2em;
+    font-style: normal;
+}
+
+.bottom {
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    height: 730px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 80px);
+    transition: all 1000ms;
+    opacity: 0;
+}
+
+.bottom a:hover {
+    background: #CBF5E3;
+    filter: drop-shadow(0 12px 6px rgba(0, 0, 0, 16%));
+
+}
+
+.bottom img {
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom a:last-child img {
+    width: 110px;
+}
+
+.bottom a {
+    width: 150px;
+    margin: 0 50px;
+    transition: all .1s;
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    background: #83c8ab;
+    text-decoration-line: none;
+    filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 16%));
+}
+
+.bottom p {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+}
+
+footer p {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+}
